@@ -78,33 +78,3 @@ header nav a {
   flex-wrap: wrap;
   padding: 80px;
 }
-
-/* ←←← About →→→ */
-
-#about img {
-  border-radius: 50%;
-  border: var(--border-params);
-  width: 25em;
-}
-
-/* ↓↓↓ content ↓↓↓ */
-
-.content {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.content-box {
-  display: flex;
-  flex-basis: auto;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: flex-end;
-}
-
-.work-example {
-  flex-basis: auto;
-}
-
-#work-example-main {
-}
