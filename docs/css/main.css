@@ -102,7 +102,10 @@ article img {
   border-radius: 50%;
   width: 18em;
 }
-
+.most-recent img {
+  width: 62vw;
+  margin: 40px;
+}
 .body-content {
   display: flex;
   justify-content: space-between;
@@ -115,4 +118,12 @@ article img {
   height: 300px;
   padding-left: 200px;
   border-right: solid 3px var(--primary-color);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.work {
 }
