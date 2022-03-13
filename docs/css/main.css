@@ -5,7 +5,7 @@
   --secondary-color: #99cc99;
   --tertiary-color: #cccc99;
   --quaternary-color: #9999cc;
-  --border-params: solid 3px black;
+  --border-params: solid 3px var(--primary-color);
 }
 
 * {
@@ -16,8 +16,10 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #555555;
+  background: var(--secondary-color);
 }
+
+/* ↓↓↓ Header styles ↓↓↓ */
 
 header {
   z-index: 9999;
@@ -32,6 +34,7 @@ header {
   position: sticky;
   background-image: url(../images/geo-background.jpg);
   background-size: cover;
+  background-attachment: fixed;
   background-position: 50%;
 }
 
@@ -40,14 +43,12 @@ header h1 {
   padding: 20px;
   font-size: 2.5rem;
 }
-
 header nav ul {
   display: flex;
   justify-content: space-between;
   padding: 25px;
   list-style: none;
 }
-
 header nav ul li {
   font-size: 2rem;
   padding: 15px;
@@ -60,30 +61,50 @@ header a {
 header nav a {
   text-decoration: none;
 }
+
+/* ↓↓↓ Hero styles ↓↓↓ */
+
+.hero {
+  display: flex;
+  background-image: url(../images/geo-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50%;
+  justify-content: flex-end;
+}
+.hero h2 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  flex-wrap: wrap;
+  padding: 80px;
+}
+
+/* ←←← About →→→ */
+
 #about img {
   border-radius: 50%;
   border: var(--border-params);
+  width: 25em;
 }
 
-.work-example img {
-  width: 25%;
-  border: var(--border-params);
-}
-
-.work-example-main img {
-  width: 66%;
-}
+/* ↓↓↓ content ↓↓↓ */
 
 .content {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
-.content-box a {
-  justify-content: flex-end;
+.content-box {
+  display: flex;
+  flex-basis: auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
 }
-.content-box h3 {
-  justify-content: flex-start;
-  width: 28%;
+
+.work-example {
+  flex-basis: auto;
+}
+
+#work-example-main {
 }
