@@ -42,6 +42,7 @@ header h1 {
   color: var(--secondary-color);
   padding: 20px;
   font-size: 2.5rem;
+  text-shadow: 2px 2px 5px var(--secondary-color);
 }
 
 header nav ul {
@@ -54,6 +55,7 @@ header nav ul {
 header nav ul li {
   font-size: 2rem;
   padding: 15px;
+  text-shadow: 2px 2px 5px var(--quaternary-color);
 }
 
 header a {
@@ -80,44 +82,75 @@ header nav a {
   font-size: 1.8rem;
   flex-wrap: wrap;
   padding: 80px;
+  text-shadow: 2px 2px 5px var(--quaternary-color);
 }
 
 /* ↓↓↓ Section styles ↓↓↓ */
 
+/* ↓↓↓ Footer Styles ↓↓↓ */
+
+footer {
+  z-index: 9999;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  flex-direction: row;
+  background-image: url(../images/geo-background.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+
+footer h1 {
+  color: var(--secondary-color);
+  padding: 20px;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 5px var(--secondary-color);
+}
+
+footer nav ul li {
+  font-size: 2rem;
+  padding: 15px;
+  text-shadow: 2px 2px 5px var(--quaternary-color);
+}
+
+footer p {
+  color: var(--primary-color);
+  padding: 1em;
+}
+
+footer a {
+  color: var(--quaternary-color);
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+/* ↓↓↓ Broke everything ↓↓↓ */
+/* 
 article {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  padding: 25px;
+}
+article img {
+  border-radius: 50%;
+  width: 18em;
+  margin: 2.5em;
 }
 
 article p {
-  width: 150px;
-  font-size: 2rem;
-  width: 40em;
+  padding: 3.5em 2.5em;
 }
 
-article img {
-  margin: 0 6em 0 3em;
-  border-radius: 50%;
-  width: 18em;
-}
-.most-recent img {
-  width: 62vw;
-  margin: 40px;
-}
-.body-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px;
+section h2 {
+  font-size: 3.5rem;
+  width: 4em;
 }
 
-.body-content h2 {
-  width: 300px;
-  height: 300px;
-  padding-left: 200px;
-  border-right: solid 3px var(--primary-color);
+section p {
+  font-size: 1.8rem;
+  color: black;
 }
 
 .main {
@@ -125,5 +158,14 @@ article img {
   flex-direction: column;
 }
 
-.work {
+.body-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
+
+article,
+.work {
+  margin: 24px 0;
+  border-left: var(--border-params);
+} */
