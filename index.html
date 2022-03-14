@@ -18,9 +18,9 @@
       <h1>David Williams</h1>
       <nav>
         <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -34,23 +34,25 @@
     <!-- ↓↓↓ Content ↓↓↓ -->
     <div class="main">
       <section class="body-content">
-        <h2>About</h2>
-        <article>
-          <img
-            src="./docs/images/JhonnyFive.jpg"
-            alt="Photo of David Williams"
-          />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Accusantium nisi aperiam velit sed est doloremque quod, voluptatem
-            illum placeat, dolores unde quia quasi dignissimos ducimus. Laborum
-            at minus error inventore.
-          </p>
-        </article>
+        <h2 id="about">About</h2>
+        <div class="about">
+          <article>
+            <img
+              src="./docs/images/JhonnyFive.jpg"
+              alt="Photo of David Williams"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Accusantium nisi aperiam velit sed est doloremque quod, voluptatem
+              illum placeat, dolores unde quia quasi dignissimos ducimus.
+              Laborum at minus error inventore.
+            </p>
+          </article>
+        </div>
       </section>
 
       <section class="body-content">
-        <h2>Work</h2>
+        <h2 id="work">Work</h2>
         <div class="work">
           <div class="work-examples most-recent">
             <span>Run Buddy</span>
@@ -89,6 +91,15 @@
     </div>
 
     <!-- ↓↓↓ Contact section ↓↓↓ -->
+    <section class="body-content">
+      <h2 id="contact">Contact</h2>
+      <div class="contact">
+        <address>
+          Phone: 920.615.8889 <br />
+          Email: talktomedw@gmail.com <br />
+        </address>
+      </div>
+    </section>
 
     <!-- ↓↓↓ Footer ↓↓↓ -->
 
