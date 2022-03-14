@@ -92,16 +92,28 @@ header nav a {
   align-items: center;
   justify-content: space-between;
 }
+.body-content img {
+  box-shadow: 2px 2px 5px black;
+}
 
 .body-content h2 {
   flex: 1 28%;
   padding: 60px 20px 20px 180px;
   font-size: 80px;
   top: 0;
+  text-shadow: 2px 2px 5px black;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1em;
 }
 
 .sub-section {
   display: flex;
+  flex-direction: column;
   flex: 2 60%;
 }
 
@@ -115,9 +127,9 @@ header nav a {
   max-width: 60%;
 }
 article img {
+  border: solid 2px black;
   border-radius: 50%;
   width: 360px;
-  border: solid 2px black;
   margin: 3.8em;
 }
 
@@ -127,6 +139,11 @@ article img {
 
 .most-recent img {
   width: 60vw;
+}
+
+.contact {
+  font-weight: bold;
+  font-size: 28px;
 }
 
 /* ↓↓↓ Footer Styles ↓↓↓ */
@@ -151,16 +168,14 @@ footer h1 {
   font-size: 2.5rem;
   text-shadow: 2px 2px 5px var(--secondary-color);
 }
-
-footer nav ul li {
-  font-size: 2rem;
-  padding: 15px;
+footer a {
   text-shadow: 2px 2px 5px var(--quaternary-color);
 }
 
 footer p {
   color: var(--primary-color);
   padding: 1em;
+  text-shadow: 2px 2px 5px var(--primary-color);
 }
 
 footer a {
