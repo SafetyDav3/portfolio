@@ -86,11 +86,39 @@ header nav a {
 }
 
 /* ↓↓↓ Section styles ↓↓↓ */
+.body-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.body-content h2 {
+  flex: 1 28%;
+  padding: 60px 20px 20px 180px;
+  font-size: 80px;
+  top: 0;
+}
+
+.sub-section {
+  display: flex;
+  flex: 2 60%;
+}
+
+.about article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about article p {
+  font-size: 1.8rem;
+  max-width: 60%;
+}
 article img {
   border-radius: 50%;
   width: 360px;
-  border: solid 2px var(--tertiary-color);
+  border: solid 2px black;
+  margin: 3.8em;
 }
 
 .work-examples img {
