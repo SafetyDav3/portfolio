@@ -87,6 +87,20 @@ header nav a {
 
 /* ↓↓↓ Section styles ↓↓↓ */
 
+article img {
+  border-radius: 50%;
+  width: 360px;
+  border: solid 2px var(--tertiary-color);
+}
+
+.work-examples img {
+  width: 28vw;
+}
+
+.most-recent img {
+  width: 60vw;
+}
+
 /* ↓↓↓ Footer Styles ↓↓↓ */
 
 footer {
